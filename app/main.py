@@ -19,6 +19,7 @@ def is_allowed_subdomain(origin: str) -> bool:
         return (
             hostname == "localhost" or
             hostname == "mydomain.com" or
+            hostname == "json-to-word-fe.onrender.com" or
             hostname.endswith(".mydomain.com")
         )
     except Exception:
