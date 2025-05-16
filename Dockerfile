@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     && rm -rf /var/lib/apt/lists/*
 
-
+EXPOSE 8000
 # Làm việc trong thư mục app
 WORKDIR /app
 
